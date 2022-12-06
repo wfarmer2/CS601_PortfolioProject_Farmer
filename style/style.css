@@ -1,0 +1,62 @@
+/* global colors and styling */
+* {
+    font-family: Arial, Helvetica;
+}
+/* header and navigation stylying */
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 40px;
+    box-shadow: 0 1px 8px #ddd;
+}
+#nav-title {
+    margin-right: auto;
+    font-size: 1.5em;
+}
+header li {
+    list-style: none;
+    display: inline-flex;
+    font-size: 13.5pt;
+    padding: 0 20px;
+}
+header a {
+    text-decoration: none;
+    color: #555;
+    transition: all 0.3s ease 0s;
+}
+header a:hover {
+    color: #b2dfdb;
+}
+/* container stylying */
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 40px;
+    box-shadow: 0 1px 8px #ddd;
+    flex-wrap: wrap;
+}
+.highlight_image img {
+    padding-top: 20px;
+    padding-right: 20px;
+    width: 150px;
+    height: 150px;
+}
+.highlights {
+    display: flex;
+}
+
+#highlight_description {
+    text-decoration: none;
+    font-weight: lighter;
+    color: #555;
+}
+/* footer stylying */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 40px;
+    box-shadow: 0 1px 8px #ddd;
+}
