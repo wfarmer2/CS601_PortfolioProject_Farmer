@@ -2,43 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="../style/style.css" rel="stylesheet">
     <title>Biography | William Farmer</title>
 </head>
 <body>
     <div id="application">
         <div>
             <div class="title">
-                <header>
+                <header id="nav-title">
                     <h1>William Farmer Portfolio</h1>
+                    <div>
+                        <nav>
+                            <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="">Biography</a></li>
+                            <li><a href="../pages/resume.html">Resume</a></li>
+                            <li><a href="../pages/gallery.html">Gallery</a></li>
+                            <li><a href="../pages/interests.html">Interests</a></li>
+                            <li><a href="../pages/contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </header>
             </div>
-            <div class="main">
-                <div class="navbar">
-                    <nav>
-                        <ul>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="">Biography</a></li>
-                        <li><a href="resume.html">Resume</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="interests.html">Interests</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
+            <div id="biography_container" class="container">
                 <div class="content">
-                    <h2>Biography</h2>
+                    <h1>Biography</h1>
                     <div class="biography">
-                        <p>
-                            Biography Content
-                        </p>
+                        <article class="biography">
+                            <div class="biography_image">
+                                <img id="william_farmer_pic" src="../images/william_farmer_profile_pic.jpg" alt="Professional Picture of William Farmer">
+                            </div>
+                            <div class="biography_content">
+                                <h2>Who am I?</h2>
+                                <h3 id="biography_description">
+                                    Welcome, my name is William Farmer and let me tell you a bit about myself!
+                                    I was born and raised in Arizona where I currently reside and work for 
+                                    General Motors at the company's Arizona IT Innovation Center. Since June of 2020 
+                                    I have been at General Motors working in the Customer Care & Aftersales (CCA) organization,
+                                    and specifically within Supply Chain, Warehousing, and Logistics (SCWL) space. My time at 
+                                    General Motors has entailed working as a Software Developer and most recently becoming a 
+                                    Business Analyst. For my career, I envision myself being a blend of having technical knowledge 
+                                    and skills along with business knowledge and ability to communicate to stakeholders in order to 
+                                    engineer efficient systems that make a real impact.
+                                </h3>
+                            </div>
+                        </article>
                     </div>
                 </div>
-                <footer>
-                    <h3>Footer</h3>
-                    <p>© Copyright 2022-Present</p>
-                </footer>
             </div>
+            <footer>
+                <p>© Copyright 2022-Present</p>
+            </footer>
         </div>
-    </div>   
+    </div>
 </body>
 </html>

@@ -37,20 +37,36 @@ header a:hover {
     box-shadow: 0 1px 8px #ddd;
     flex-wrap: wrap;
 }
+#resume_container {
+    display: block;
+    padding: 10px 40px;
+}
+.resume object, iframe {
+    display: flex;
+    align-items: center;
+    height: 550px;
+    width: 100%;
+    border: 3pt solid black;
+}
 .highlight_image img {
     padding-top: 20px;
     padding-right: 20px;
     width: 150px;
     height: 150px;
 }
-.highlights {
+.highlights, .biography {
     display: flex;
 }
-
-#highlight_description {
+#highlight_description, #biography_description {
     text-decoration: none;
     font-weight: lighter;
     color: #555;
+}
+.biography_image img {
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
 }
 /* footer stylying */
 footer {

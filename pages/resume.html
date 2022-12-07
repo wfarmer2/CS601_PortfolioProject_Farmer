@@ -2,62 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="../style/style.css" rel="stylesheet">
     <title>Resume | William Farmer</title>
 </head>
 <body>
     <div id="application">
         <div>
             <div class="title">
-                <header>
+                <header id="nav-title">
                     <h1>William Farmer Portfolio</h1>
+                    <div>
+                        <nav>
+                            <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../pages/biography.html">Biography</a></li>
+                            <li><a href="">Resume</a></li>
+                            <li><a href="../pages/gallery.html">Gallery</a></li>
+                            <li><a href="../pages/interests.html">Interests</a></li>
+                            <li><a href="../pages/contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </header>
             </div>
-            <div class="main">
-                <div class="navbar">
-                    <nav>
-                        <ul>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="biography.html">Biography</a></li>
-                        <li><a href="">Resume</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="interests.html">Interests</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
+            <div id="resume_container" class="container">
                 <div class="content">
-                    <h2>Resume</h2>
+                    <h1>Resume</h1>
                     <div class="resume">
-                       <h3>William Farmer</h3>
-                       <hr>
-                       <p class="head">Education</p>
-                        <ul>
-                            <li>Boston University</li>
-                            <li>Arizona State University</li>
-                        </ul>
-                        <p class="head">Professional Experience</p>
-                        <ul>
-                            <li>General Motors</li>
-                            <li>Freeport-McMoRan Inc.</li>
-                        </ul>
-                        <p class="head">Professional Development</p>
-                        <ul>
-                            <li>Jumpstart Arizona Chapter</li>
-                            <li>Department of Information Systems Club (DISC)</li>
-                        </ul>
-                        <p class="head">Technical Skills</p>
-                        <ul>
-                            <tr>Python</tr>
-                            <tr>Java</tr>
-                        </ul>
+                        <section class="resume">
+                            <div class="resume_content">
+                                <object data="../documents/William_Farmer_Resume.pdf#view=fitH" type="application/pdf">
+                                    <iframe src="../documents/William_Farmer_Resume.pdf#view=fitH">
+                                    This browser does not support PDFs. Please download the PDF to view it: 
+                                    <a href="../documents/William_Farmer_Resume.pdf#view=fitH">Download PDF</a>
+                                    </iframe>
+                                </object>
+                            </div>
+                        </section>
                     </div>
                 </div>
-                <footer>
-                    <h3>Footer</h3>
-                    <p>© Copyright 2022-Present</p>
-                </footer>
             </div>
+            <footer>
+                <p>© Copyright 2022-Present</p>
+            </footer>
         </div>
-    </div>   
+    </div>
 </body>
 </html>
