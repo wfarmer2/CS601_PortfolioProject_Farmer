@@ -2,33 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../style/style.css" rel="stylesheet">
     <title>Contact | William Farmer</title>
 </head>
 <body>
     <div id="application">
         <div>
             <div class="title">
-                <header>
+                <header id="nav-title">
                     <h1>William Farmer Portfolio</h1>
+                    <div>
+                        <nav>
+                            <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../pages/biography.html">Biography</a></li>
+                            <li><a href="../pages/resume.html">Resume</a></li>
+                            <li><a href="../pages/skills.html">Skills</a></li>
+                            <li><a href="../pages/interests.html">Interests</a></li>
+                            <li><a href="">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </header>
             </div>
-            <div class="main">
-                <div class="navbar">
-                    <nav>
-                        <ul>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="biography.html">Biography</a></li>
-                        <li><a href="resume.html">Resume</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="interests.html">Interests</a></li>
-                        <li><a href="">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
+            <div id="contact_container" class="container">
                 <div class="content">
-                    <h2>Send Contact Information</h2>
+                    <h1>Contact</h1>
                     <div class="contact">
-                        <form name="cs601Form" class="cs601Form"  onsubmit="">
+                        <form name="contact_form" id="contact_form" action="" method="" onsubmit="">
                             <div id="row1">
                                 <label for="firstName" id="firstNamePrompt">First Name</label>
                                 <input type="text" placeholder="First Name" name="firstName" id="firstName" required>
@@ -39,24 +42,24 @@
                             </div>
                             <div id="row3">
                                 <label for="email" id="emailPrompt">Email</label>
-                                <input type="text" placeholder="my@email.com" name="email" id="email" required>
+                                <input type="email" placeholder="my@email.com" name="email" id="email" required>
                             </div>
-                            <div id="row4">
-                                <label for="message" id="messagePrompt">Message</label>
-                                <input type="text" placeholder="Message To Send" name="message" id="message" required>
+                            <div id="row3">
+                                <label for="message" id="MessagePrompt">Message</label>
+                                <input type="text" placeholder="My Message" name="message" id="message" required>
                             </div>
                             <div id="row5">
-                                <input type="submit" id="submitButton" value="Submit Contact Request">
+                                <input type="submit" id="submitButton" value="Submit Form">
                             </div>
+                            <!--Form End-->
                         </form>
                     </div>
                 </div>
-                <footer>
-                    <h3>Footer</h3>
-                    <p>© Copyright 2022-Present</p>
-                </footer>
             </div>
+            <footer>
+                <p>© Copyright 2022-Present</p>
+            </footer>
         </div>
-    </div>   
+    </div>
 </body>
 </html>

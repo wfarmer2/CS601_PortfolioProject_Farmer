@@ -48,13 +48,13 @@ header a:hover {
     width: 100%;
     border: 3pt solid black;
 }
-.highlight_image img {
+.highlight_image img, .interests_image img {
     padding-top: 20px;
     padding-right: 20px;
     width: 150px;
     height: 150px;
 }
-.highlights, .biography {
+.highlights, .biography, .interests {
     display: flex;
 }
 #highlight_description, #biography_description {
