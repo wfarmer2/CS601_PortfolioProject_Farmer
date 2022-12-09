@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../style/style.css" rel="stylesheet">
+    <script src="../javascript/validateContact.js"></script>
     <title>Contact | William Farmer</title>
 </head>
 <body>
@@ -29,16 +30,16 @@
             </div>
             <div id="contact_container" class="container">
                 <div class="content">
-                    <h1>Contact</h1>
+                    <h1>Contact Me</h1>
                     <div class="contact">
-                        <form name="contact_form" id="contact_form" action="" method="" onsubmit="">
+                        <form class="contact_form" id="contact_form" onsubmit="return validateForm(event);">
                             <div id="row1">
                                 <label for="firstName" id="firstNamePrompt">First Name</label>
-                                <input type="text" placeholder="First Name" name="firstName" id="firstName" required>
+                                <input type="text" placeholder="John" name="firstName" id="firstName" required>
                             </div>
                             <div id="row2">
                                 <label for="lastName" id="lastNamePrompt">Last Name</label>
-                                <input type="text" placeholder="Last Name" name="lastName" id="lastName" required>
+                                <input type="text" placeholder="Doe" name="lastName" id="lastName" required>
                             </div>
                             <div id="row3">
                                 <label for="email" id="emailPrompt">Email</label>
@@ -48,10 +49,9 @@
                                 <label for="message" id="MessagePrompt">Message</label>
                                 <input type="text" placeholder="My Message" name="message" id="message" required>
                             </div>
-                            <div id="row5">
-                                <input type="submit" id="submitButton" value="Submit Form">
+                            <div class="button">
+                                <input type="submit" id="submitButton" value="Submit">
                             </div>
-                            <!--Form End-->
                         </form>
                     </div>
                 </div>

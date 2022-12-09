@@ -68,6 +68,23 @@ header a:hover {
     height: 200px;
     border-radius: 50%;
 }
+.contact_form {
+    display: block;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+input[type=text], input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+#submitButton {
+    display: flex;
+    font-size: 10pt;
+    padding: 0.5em;
+}
 /* footer stylying */
 footer {
     display: flex;
