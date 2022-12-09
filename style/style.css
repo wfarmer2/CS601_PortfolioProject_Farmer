@@ -57,7 +57,7 @@ header a:hover {
 .highlights, .biography, .interests {
     display: flex;
 }
-#highlight_description, #biography_description {
+#highlight_description, #biography_description, #interests_description {
     text-decoration: none;
     font-weight: lighter;
     color: #555;
