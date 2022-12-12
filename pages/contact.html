@@ -7,6 +7,10 @@
     <link href="../style/style.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <script src="../javascript/validateContact.js"></script>
+    <!--restdb.io connections-->
+    <script src="https://mycontactdb-261f.restdb.io/assets/js/eventsource.min.js"></script>
+    <script src="https://mycontactdb-261f.restdb.io/rest/_jsapi.js?plainjs=true"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <title>Contact | William Farmer</title>
 </head>
 <body>
@@ -36,7 +40,7 @@
                     <!--contact form-->
                     <h1>Contact Me</h1>
                     <div class="contact">
-                        <form class="contact_form" id="contact_form" onsubmit="return validateForm(event);">
+                        <form class="contact_form" id="contact_form" action="https://mycontactdb-261f.restdb.io/rest/contact" onsubmit="return validateForm(event);">
                             <div id="row1">
                                 <label for="firstName" id="firstNamePrompt">First Name</label>
                                 <div id="firstNameErrorMessage"></div>
