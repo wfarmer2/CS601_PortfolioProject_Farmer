@@ -1,12 +1,14 @@
-
+// create variables for images
 let disneyImage1 = "../images/disney1.jpg";
 let disneyImage2 = "../images/disney2.jpg";
 let disneyImage3 = "../images/disney3.jpg";
 let disneyImage4 = "../images/disney4.jpg";
 let disneyImage5 = "../images/disney5.jpg";
 
+// create an array of images from defined variables
 const myImages = [disneyImage1, disneyImage2, disneyImage3, disneyImage4, disneyImage5]
 
+// create new Vue to use for skills image gallery
 Vue.createApp({
   data() {
     return {
