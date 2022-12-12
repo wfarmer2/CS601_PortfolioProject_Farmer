@@ -34,7 +34,7 @@ function validateFirstName() {
     let firstName = document.getElementById("firstName");
 
     // check to see if the input is more than or equal to 2 characters, not null, empty string or not
-    if (firstName.value.length <= 2 || firstName.value == null || firstName.value == "") {
+    if (firstName.value.length < 2 || firstName.value == null || firstName.value == "") {
         // change message using DOM manipulation to show error and change text color to user
         document.getElementById("firstNameErrorMessage").innerHTML = ("<span style='color:red'> Invalid name! First name must contain two (2) or more characters.</span>");
         // focus on text input and return false to not submit form
@@ -65,7 +65,7 @@ function validateLastName() {
     let lastName = document.getElementById("lastName");
 
     // check to see if the input is more than or equal to 2 characters, not null, empty string or not
-    if (lastName.value.length <= 2 || lastName.value == null || lastName.value == "") {
+    if (lastName.value.length < 2 || lastName.value == null || lastName.value == "") {
         // change message using DOM manipulation to show error and change text color to user
         document.getElementById("lastNameErrorMessage").innerHTML = ("<span style='color:red'> Invalid name! Last name must contain two (2) or more characters.</span>");
         // focus on text input and return false to not submit form
