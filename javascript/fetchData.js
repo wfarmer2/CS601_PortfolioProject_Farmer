@@ -45,8 +45,8 @@ async function loadAPOD() {
     let apodData = await getURLInfo("https://go-apod.herokuapp.com/apod");
     // html code to be inserted into page
     const html = `<h3>${apodData.title}</h3>
-                  <img src=${apodData.hdurl} height=250 width=350>
-                  <p>${apodData.date} | Photo by ${apodData.copyright}<br></p>
+                  <img src=${apodData.hdurl} height=200 width=200>
+                  <p>${apodData.date}<br></p>
                   <p>${apodData.explanation}</p>`
                   
     
