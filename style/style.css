@@ -35,9 +35,8 @@ header a:hover {
     align-items: center;
     padding: 10px 40px;
     box-shadow: 0 1px 8px #ddd;
-    flex-wrap: wrap;
 }
-#resume_container {
+#resume_container, #skills_container {
     display: block;
     padding: 10px 40px;
 }
@@ -49,15 +48,17 @@ header a:hover {
     border: 3pt solid black;
 }
 .highlight_image img, .interests_image img {
+    display: flex;
     padding-top: 20px;
     padding-right: 20px;
     width: 150px;
     height: 150px;
+    flex-wrap: wrap;
 }
 .highlights, .biography, .interests {
     display: flex;
 }
-#highlight_description, #biography_description, #interests_description, #apod {
+#highlight_description, #biography_description, #interests_description, #apod, .desc {
     text-decoration: none;
     font-weight: lighter;
     color: #555;
@@ -80,7 +81,7 @@ input[type=text], input[type=email] {
     margin: 8px 0;
     box-sizing: border-box;
 }
-#submitButton {
+#submitButton, #button {
     display: flex;
     font-size: 10pt;
     padding: 0.5em;
@@ -93,14 +94,15 @@ footer {
     padding: 10px 40px;
     box-shadow: 0 1px 8px #ddd;
 }
+/* Vue content stylying */
 .disney1Size {
     height: 300px;
     width: 300px;
     transition: all 0.2s;
 } 
 .disney1EnlargedSize {
-    height: 500px;
-    width: 500px;
+    height: 400px;
+    width: 400px;
     transition: all 0.2s;
 }
 .disney2Size {
@@ -109,8 +111,8 @@ footer {
     transition: all 0.2s;
 } 
 .disney2EnlargedSize {
-    height: 500px;
-    width: 500px;
+    height: 400px;
+    width: 400px;
     transition: all 0.2s;
 }
 .disney3Size {
@@ -119,8 +121,8 @@ footer {
     transition: all 0.2s;
 } 
 .disney3EnlargedSize {
-    height: 500px;
-    width: 500px;
+    height: 400px;
+    width: 400px;
     transition: all 0.2s;
 }
 .disney4Size {
@@ -129,8 +131,8 @@ footer {
     transition: all 0.2s;
 } 
 .disney4EnlargedSize {
-    height: 500px;
-    width: 500px;
+    height: 400px;
+    width: 400px;
     transition: all 0.2s;
 }
 .disney5Size {
@@ -139,7 +141,20 @@ footer {
     transition: all 0.2s;
 } 
 .disney5EnlargedSize {
-    height: 500px;
-    width: 500px;
+    height: 400px;
+    width: 400px;
     transition: all 0.2s;
+}
+.gallery {
+    text-align: center;
+    flex: 25%;
+    padding: 5px;
+    
+}
+.gallery img {
+    border: 3pt solid silver;
+}
+.skills_vue {
+    display: flex;
+    flex-wrap: wrap;
 }

@@ -10,7 +10,6 @@ const myImages = [disneyImage1, disneyImage2, disneyImage3, disneyImage4, disney
 Vue.createApp({
   data() {
     return {
-      header: 'Image Gallery Using Vue.js - My Photos From Disney World',
       myImages,
       image1Description: 'A Tale As Old As Time',
       image2Description: 'Night In Epcot',
@@ -56,8 +55,7 @@ Vue.createApp({
       this.disney5Enlarged = false;
     },
   },
-  template: `<h2>{{header}}</h2>
-              <div class="gallery">
+  template: `<div class="gallery">
                   <img :class="{
                       'disney1Size': true,
                       'disney1EnlargedSize': disney1Enlarged,
