@@ -20,10 +20,10 @@ function validateForm(event) {
     }
     else {
         // use restdb.io settings to post data to online db
-        let jsonData = {"first_name": document.getElementById("firstName"),
-                        "last_name": document.getElementById("lastName"),
-                        "email": document.getElementById("email"),
-                        "message": document.getElementById("message")};
+        let jsonData = {"first_name": document.getElementById('firstName').value,
+                        "last_name": document.getElementById("lastName").value,
+                        "email": document.getElementById("email").value,
+                        "message": document.getElementById("message").value};
         let settings = {
         "async": true,
         "crossDomain": true,
