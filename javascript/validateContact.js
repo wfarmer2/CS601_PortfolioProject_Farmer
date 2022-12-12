@@ -19,7 +19,8 @@ function validateForm(event) {
         return;
     }
     else {
-        let jsondata = {"first_name": document.getElementById("firstName"),
+        // use restdb.io settings to post data to online db
+        let jsonData = {"first_name": document.getElementById("firstName"),
                         "last_name": document.getElementById("lastName"),
                         "email": document.getElementById("email"),
                         "message": document.getElementById("message")};
@@ -34,7 +35,7 @@ function validateForm(event) {
             "cache-control": "no-cache"
         },
         "processData": false,
-        "data": JSON.stringify(jsondata)
+        "data": JSON.stringify(jsonData)
         }
 
         $.ajax(settings).done(function (response) {
