@@ -1,6 +1,10 @@
+### CS601 Portfolio Project:
 
-*Description*
-This project was designed for the course of CS601 - Web Application Developmet at Boston University Metropolitan College.
+This project was designed for the course CS601 at Boston Univeristy - Metropolitan College. The intent of the project was to show the skills that I have learned in the course as well as presenting information about myself.
 
-*Goals*
-The goals of this project was to create a personal digital portfolio that showcases information about myself and the skills I have learned in the course. 
+### Author Information:
+
+- William Farmer
+
+### Date Created:
+- December 12, 2022
