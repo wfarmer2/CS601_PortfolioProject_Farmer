@@ -46,6 +46,10 @@ header a:hover {
 .container h2 {
     color: var(--pop-color);
 }
+.container a {
+    text-decoration: underline;
+    font-weight: bold;
+}
 .biography {
     min-height: 53vh;
 }
@@ -71,7 +75,7 @@ header a:hover {
 .highlights, .biography, .interests {
     display: flex;
 }
-#highlight_description, #biography_description, #interests_description, #apod, .desc {
+#highlight_description, #biography_description, #interests_description, #apod, .desc, p, a{
     text-decoration: none;
     font-weight: lighter;
     color: darkslategrey;
@@ -122,6 +126,8 @@ footer {
     padding: 10px 40px;
     box-shadow: 0 1px 8px #ddd;
     background-color: var(--pop-color);
+}
+footer p{
     color: var(--secondary-color);
 }
 /* Vue content stylying */
