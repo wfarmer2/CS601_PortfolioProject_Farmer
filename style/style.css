@@ -1,6 +1,12 @@
 /* global colors and styling */
 * {
-    font-family: Arial, Helvetica;
+    font-family: 'Montserrat';
+}
+:root {
+    --main-color: black;
+    --secondary-color: white;
+    --tertiary-color: silver;
+    --pop-color: midnightblue;
 }
 /* header and navigation stylying */
 header {
@@ -8,11 +14,13 @@ header {
     justify-content: flex-start;
     align-items: center;
     padding: 10px 40px;
-    box-shadow: 0 1px 8px #ddd;
+    box-shadow: 0 1px 8px var(--tertiary-color);
 }
 #nav-title {
     margin-right: auto;
-    font-size: 1.5em;
+    font-size: 1.15em;
+    background-color: var(--pop-color);
+    color: var(--secondary-color);
 }
 header li {
     list-style: none;
@@ -22,11 +30,11 @@ header li {
 }
 header a {
     text-decoration: none;
-    color: #555;
+    color: var(--secondary-color);
     transition: all 0.3s ease 0s;
 }
 header a:hover {
-    color: #b2dfdb;
+    color: goldenrod;
 }
 /* container stylying */
 .container {
@@ -34,7 +42,12 @@ header a:hover {
     justify-content: flex-start;
     align-items: center;
     padding: 10px 40px;
-    box-shadow: 0 1px 8px #ddd;
+}
+.container h2 {
+    color: var(--pop-color);
+}
+.biography {
+    min-height: 53vh;
 }
 #resume_container, #skills_container {
     display: block;
@@ -45,7 +58,7 @@ header a:hover {
     align-items: center;
     height: 550px;
     width: 100%;
-    border: 3pt solid black;
+    border: 3pt solid var(--pop-color);
 }
 .highlight_image img, .interests_image img {
     display: flex;
@@ -61,7 +74,7 @@ header a:hover {
 #highlight_description, #biography_description, #interests_description, #apod, .desc {
     text-decoration: none;
     font-weight: lighter;
-    color: #555;
+    color: darkslategrey;
 }
 .biography_image img {
     padding: 20px;
@@ -69,11 +82,18 @@ header a:hover {
     height: 200px;
     border-radius: 50%;
 }
+#apod img {
+    border: 3pt solid var(--pop-color);
+}
 .contact_form {
     display: block;
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 16px;
+}
+.contact_form label {
+    font-weight: bold;
+    color: var(--pop-color);
 }
 input[type=text], input[type=email] {
     width: 100%;
@@ -83,8 +103,16 @@ input[type=text], input[type=email] {
 }
 #submitButton, #button {
     display: flex;
-    font-size: 10pt;
+    font-size: 11pt;
     padding: 0.5em;
+    background-color: var(--pop-color);
+    color: var(--secondary-color);
+    border: 2pt solid var(--tertiary-color);
+}
+#button:disabled {
+    background-color: var(--tertiary-color);
+    color: var(--main-color);
+    border: 2pt solid var(--tertiary-color);
 }
 /* footer stylying */
 footer {
@@ -93,6 +121,8 @@ footer {
     align-items: center;
     padding: 10px 40px;
     box-shadow: 0 1px 8px #ddd;
+    background-color: var(--pop-color);
+    color: var(--secondary-color);
 }
 /* Vue content stylying */
 .disney1Size {
@@ -152,7 +182,7 @@ footer {
     
 }
 .gallery img {
-    border: 3pt solid silver;
+    border: 3pt solid var(--pop-color);
 }
 .skills_vue {
     display: flex;

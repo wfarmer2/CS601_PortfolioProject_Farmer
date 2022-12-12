@@ -43,6 +43,7 @@ async function loadAPOD() {
     // create degrees variable and call getDegreeInfo() function
     // to fetch JSON data from server
     let apodData = await getURLInfo("https://go-apod.herokuapp.com/apod");
+    document.getElementById("button").disabled = true;
     // html code to be inserted into page
     const html = `<h3>${apodData.title}</h3>
                   <img src=${apodData.hdurl} height=200 width=200>
@@ -53,4 +54,5 @@ async function loadAPOD() {
     // grab the current table and add each degree data to it
     let div = document.getElementById("apod");
     div.innerHTML = html;
+    document.getElementById("button").disabled = true;
 }
