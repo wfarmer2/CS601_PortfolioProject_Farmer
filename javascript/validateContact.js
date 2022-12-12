@@ -17,7 +17,7 @@ function validateForm(event) {
 
     // if any of the values are false then throw an alert to user so they can fix the errors before submission
     if (!validFirstName || !validLastName) {
-        return alert("Please correct form errors before submission.");
+        return;
     }
 
     // validated form can be submitted to destination 
@@ -36,7 +36,7 @@ function validateFirstName() {
     // check to see if the input is more than or equal to 2 characters, not null, empty string or not
     if (firstName.value.length <= 2 || firstName.value == null || firstName.value == "") {
         // change message using DOM manipulation to show error and change text color to user
-        document.getElementById("firstNamePrompt").innerHTML += ("<span style='color:red'> Invalid name! First name must contain two (2) or more characters.</span>");
+        document.getElementById("firstNameErrorMessage").innerHTML = ("<span style='color:red'> Invalid name! First name must contain two (2) or more characters.</span>");
         // focus on text input and return false to not submit form
         firstName.focus();
         return false;
@@ -44,13 +44,14 @@ function validateFirstName() {
     // check to see if the input matches regex pattern defined at top of the file )only A-z characters)
     if (!(firstName.value.match(letterPattern))) {
         // change message using DOM manipulation to show error and change text color to user
-        document.getElementById("firstNamePrompt").innerHTML += ("<span style='color:red'> Invalid name! First name must contain only alphabetic characters.</span>");
+        document.getElementById("firstNameErrorMessage").innerHTML = ("<span style='color:red'> Invalid name! First name must contain only alphabetic characters.</span>");
         // focus on text input and return false to not submit form
         firstName.focus();
         return false;
     }
     
     // return true if input is valid
+    document.getElementById("firstNameErrorMessage").innerHTML = ("");
     return true;   
 
 }
@@ -66,7 +67,7 @@ function validateLastName() {
     // check to see if the input is more than or equal to 2 characters, not null, empty string or not
     if (lastName.value.length <= 2 || lastName.value == null || lastName.value == "") {
         // change message using DOM manipulation to show error and change text color to user
-        document.getElementById("lastNamePrompt").innerHTML += ("<span style='color:red'> Invalid name! Last name must contain two (2) or more characters.</span>");
+        document.getElementById("lastNameErrorMessage").innerHTML = ("<span style='color:red'> Invalid name! Last name must contain two (2) or more characters.</span>");
         // focus on text input and return false to not submit form
         lastName.focus();
         return false;
@@ -74,13 +75,14 @@ function validateLastName() {
     // check to see if the input matches regex pattern defined at top of the file )only A-z characters)
     if (!(lastName.value.match(letterPattern))) {
         // change message using DOM manipulation to show error and change text color to user
-        document.getElementById("lastNamePrompt").innerHTML += ("<span style='color:red'> Invalid name! Last name must contain only alphabetic characters.</span>");
+        document.getElementById("lastNameErrorMessage").innerHTML = ("<span style='color:red'> Invalid name! Last name must contain only alphabetic characters.</span>");
         // focus on text input and return false to not submit form
         lastName.focus();
         return false;
     }
 
     // return true if input is valid
+    document.getElementById("lastNameErrorMessage").innerHTML = ("");
     return true;
 }
 

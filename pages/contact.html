@@ -39,19 +39,22 @@
                         <form class="contact_form" id="contact_form" onsubmit="return validateForm(event);">
                             <div id="row1">
                                 <label for="firstName" id="firstNamePrompt">First Name</label>
+                                <div id="firstNameErrorMessage"></div>
                                 <input type="text" placeholder="John" name="firstName" id="firstName" required>
                             </div>
                             <div id="row2">
                                 <label for="lastName" id="lastNamePrompt">Last Name</label>
+                                <div id="lastNameErrorMessage"></div>
                                 <input type="text" placeholder="Doe" name="lastName" id="lastName" required>
                             </div>
                             <div id="row3">
                                 <label for="email" id="emailPrompt">Email</label>
+                                <div id="emailErrorMessage"></div>
                                 <input type="email" placeholder="my@email.com" name="email" id="email" required>
                             </div>
                             <div id="row3">
                                 <label for="message" id="MessagePrompt">Message</label>
-                                <input type="text" placeholder="My Message" name="message" id="message" required>
+                                <input type="text" placeholder="My Message" name="message" id="message">
                             </div>
                             <div class="button">
                                 <input type="submit" id="submitButton" value="Submit">
