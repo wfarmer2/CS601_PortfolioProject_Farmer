@@ -93,3 +93,53 @@ footer {
     padding: 10px 40px;
     box-shadow: 0 1px 8px #ddd;
 }
+.disney1Size {
+    height: 300px;
+    width: 300px;
+    transition: all 0.2s;
+} 
+.disney1EnlargedSize {
+    height: 500px;
+    width: 500px;
+    transition: all 0.2s;
+}
+.disney2Size {
+    height: 300px;
+    width: 300px;
+    transition: all 0.2s;
+} 
+.disney2EnlargedSize {
+    height: 500px;
+    width: 500px;
+    transition: all 0.2s;
+}
+.disney3Size {
+    height: 300px;
+    width: 300px;
+    transition: all 0.2s;
+} 
+.disney3EnlargedSize {
+    height: 500px;
+    width: 500px;
+    transition: all 0.2s;
+}
+.disney4Size {
+    height: 300px;
+    width: 300px;
+    transition: all 0.2s;
+} 
+.disney4EnlargedSize {
+    height: 500px;
+    width: 500px;
+    transition: all 0.2s;
+}
+.disney5Size {
+    height: 300px;
+    width: 300px;
+    transition: all 0.2s;
+} 
+.disney5EnlargedSize {
+    height: 500px;
+    width: 500px;
+    transition: all 0.2s;
+}
