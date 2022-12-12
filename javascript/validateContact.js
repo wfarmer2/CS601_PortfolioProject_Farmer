@@ -26,9 +26,11 @@ function validateForm(event) {
                         "message": document.getElementById("message").value};
         let settings = {
         "async": true,
-        "crossDomain": true,
+        crossDomain: true,
+        dataType: 'jsonp',
         "url": "https://mycontactdb-261f.restdb.io/rest/contact",
         "method": "POST",
+        "mode": "cors",
         "headers": {
             "content-type": "application/json",
             "x-apikey": "63979755f43a573dae0954b7",
