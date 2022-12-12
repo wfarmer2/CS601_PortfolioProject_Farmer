@@ -1,7 +1,6 @@
 // constant varibale for A-z characters to use for regex checks on form
 const letterPattern = /^[A-Za-z]+$/;
 
-
 /**
  * validateForm function is a wrapper function to call each validation function for the program
  * @param event is the action being done on the form
@@ -18,6 +17,29 @@ function validateForm(event) {
     // if any of the values are false then throw an alert to user so they can fix the errors before submission
     if (!validFirstName || !validLastName) {
         return;
+    }
+    else {
+        let jsondata = {"first_name": document.getElementById("firstName"),
+                        "last_name": document.getElementById("lastName"),
+                        "email": document.getElementById("email"),
+                        "message": document.getElementById("message")};
+        let settings = {
+        "async": true,
+        "crossDomain": true,
+        "url": "https://mycontactdb-261f.restdb.io/rest/contact",
+        "method": "POST",
+        "headers": {
+            "content-type": "application/json",
+            "x-apikey": "63979755f43a573dae0954b7",
+            "cache-control": "no-cache"
+        },
+        "processData": false,
+        "data": JSON.stringify(jsondata)
+        }
+
+        $.ajax(settings).done(function (response) {
+        console.log(response);
+        });
     }
 
     // validated form can be submitted to destination 
