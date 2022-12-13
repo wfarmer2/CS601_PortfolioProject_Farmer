@@ -4,7 +4,7 @@
  */
 async function getURLInfo(url) {
 
-    // url variable of where the JSON file is being hosted on via Glitch
+    // url variable of where the JSON file is being hosted
     let requestedURL = (url);
 
     try {
@@ -35,12 +35,12 @@ async function getURLInfo(url) {
 }
 
 /**
- * loadDegreeInfo function calls getDegreeInfo to grab JSON data from web server and 
+ * loadAPOD function calls getURLInfo to grab JSON data from web server and 
  * manipulates the DOM to insert into the table on the page.
  */
 async function loadAPOD() {
 
-    // create degrees variable and call getDegreeInfo() function
+    // create url variable and call getURLInfo() function
     // to fetch JSON data from server
     let apodData = await getURLInfo("https://go-apod.herokuapp.com/apod");
     document.getElementById("button").disabled = true;

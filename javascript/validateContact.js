@@ -4,7 +4,6 @@ const letterPattern = /^[A-Za-z]+$/;
 /**
  * validateForm function is a wrapper function to call each validation function for the program
  * @param event is the action being done on the form
- * @returns an alert if there is a failure in any of the validation checks
  */
 function validateForm(event) {
     // prevent any default action of the form to control how errors and flow is being handled
@@ -66,7 +65,7 @@ function validateFirstName() {
         firstName.focus();
         return false;
     }
-    // check to see if the input matches regex pattern defined at top of the file )only A-z characters)
+    // check to see if the input matches regex pattern defined at top of the file (only A-z characters)
     if (!(firstName.value.match(letterPattern))) {
         // change message using DOM manipulation to show error and change text color to user
         document.getElementById("firstNameErrorMessage").innerHTML = ("<span style='color:red'> Invalid name! First name must contain only alphabetic characters.</span>");
