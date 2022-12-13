@@ -63,7 +63,9 @@ Vue.createApp({
                       'disney1EnlargedSize': disney1Enlarged,
                     }"
                     @mouseover="enlargeImage1"
-                    @mouseout="resetImage1" :src="myImages[0]">
+                    @mouseout="resetImage1" 
+                    alt="image taken from Disney World showing Beauty and The Beast stained glass window"
+                    :src="myImages[0]">
                   <div class="desc">{{image1Description}}</div>
               </div>
               <div class="gallery">
@@ -72,7 +74,9 @@ Vue.createApp({
                       'disney2EnlargedSize': disney2Enlarged,
                     }"
                     @mouseover="enlargeImage2"
-                    @mouseout="resetImage2" :src="myImages[1]">
+                    @mouseout="resetImage2" 
+                    alt="image taken from Disney World showing Epcot at night"
+                    :src="myImages[1]">
                   <div class="desc">{{image2Description}}</div>
               </div>
               <div class="gallery">
@@ -81,7 +85,9 @@ Vue.createApp({
                       'disney3EnlargedSize': disney3Enlarged,
                     }"
                     @mouseover="enlargeImage3"
-                    @mouseout="resetImage3" :src="myImages[2]">
+                    @mouseout="resetImage3" 
+                    alt="image taken from Disney World showing the castle at night"
+                    :src="myImages[2]">
                   <div class="desc">{{image3Description}}</div>
               </div>
               <div class="gallery">
@@ -90,7 +96,9 @@ Vue.createApp({
                       'disney4EnlargedSize': disney4Enlarged,
                     }"
                     @mouseover="enlargeImage4"
-                    @mouseout="resetImage4" :src="myImages[3]">
+                    @mouseout="resetImage4" 
+                    alt="image taken from Disney World showing fireworks in the night sky"
+                    :src="myImages[3]">
                   <div class="desc">{{image4Description}}</div>
               </div>
               <div class="gallery">
@@ -99,7 +107,9 @@ Vue.createApp({
                       'disney5EnlargedSize': disney5Enlarged,
                     }"
                     @mouseover="enlargeImage5"
-                    @mouseout="resetImage5" :src="myImages[4]">
+                    @mouseout="resetImage5" 
+                    alt="image taken from Disney World showing a poster promoting Merlin's magic"
+                    :src="myImages[4]">
                   <div class="desc">{{image5Description}}</div>
               </div>`
 }).mount('#skills_vue')
