@@ -43,6 +43,9 @@ header a:hover {
     align-items: center;
     padding: 10px 40px;
 }
+ul {
+    list-style-type: none;
+ }
 .container h2 {
     color: var(--pop-color);
 }
@@ -75,7 +78,7 @@ header a:hover {
 .highlights, .biography, .interests {
     display: flex;
 }
-#highlight_description, #biography_description, #interests_description, #apod, .desc, p, a{
+.highlight_description, .biography_description, .interests_description, #apod, .desc, p, a{
     text-decoration: none;
     font-weight: lighter;
     color: darkslategrey;
